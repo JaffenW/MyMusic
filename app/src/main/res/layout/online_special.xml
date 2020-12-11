@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/red">
+
+        <ImageView
+            android:id="@+id/goback"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@mipmap/return_left"/>
+
+        <TextView
+            android:id="@+id/charttitle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="百度热歌榜"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:background="#FF6600"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/chartmrg"
+            android:layout_width="170dp"
+            android:layout_height="140dp"
+            android:layout_gravity="center"
+            android:src="@mipmap/popularsong" />
+
+        <LinearLayout
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center">
+
+            <TextView
+                android:id="@+id/chartname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="榜单名"/>
+            <TextView
+                android:id="@+id/update_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="最近更新时间"/>
+            <TextView
+                android:id="@+id/chartcomment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="榜单简介"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/speciallist"
+        android:layout_width="410dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/white" />
+</LinearLayout>
